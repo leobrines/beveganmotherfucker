@@ -1,0 +1,67 @@
+BODY        {font-family:    Arial, helvetica, sans-serif; ;
+             background:     #FFFFFF  ; 
+             margin-left:       4%; 
+             margin-right:      4%;  
+             font-size:        11pt; }
+
+H1          {display:          block;
+             font-size:        16pt;
+             font-family:      Arial, helvetica, sans-serif;
+             text-align:        center;
+             color: 		 #CC0000; }
+
+H2	    {display:          block;
+             color:            #CA2B2B;
+             font-size:        14pt;
+             font-family:      Arial, helvetica, sans-serif; }
+
+H3	    {display:          block;
+             color:            #D74646;
+             font-size:        13pt;
+             font-family:      Arial, helvetica, sans-serif; }
+
+H4          {margin-right:      1%;  
+             margin-top:        0; 
+             margin-bottom:     0; 
+             color:            #B56D6D; }
+
+H5          {margin-right:      1%; 
+             margin-top:        0; 
+             margin-bottom:     0;
+             text-align:        center; }
+
+H6          {margin-top:        0; 
+             margin-bottom:     0;
+             margin-right:      5%; 
+             font-size:        10pt;
+             font-family:      Arial, helvetica, sans-serif;}
+
+
+TD      {font-size:         10pt;
+         font-family:      Arial, helvetica, sans-serif; }
+
+UL          {list-style-type:   disc; }
+
+SUP         {font-size:        8pt;
+             font-family:      Arial, helvetica, sans-serif;}
+
+
+.Footnote   {font-size:         8pt;
+             margin-top:        0; 
+             margin-bottom:     0;}
+
+.TOC0 {
+	FONT-WEIGHT: bold; COLOR: #F26600; FONT-SIZE: 20pt; FONT-FAMILY: Garamond, Optima, Garamond, sans-serif; TEXT-ALIGN: center
+}
+
+.doclink {
+	COLOR: #BB1A06; FONT-SIZE: 12pt; FONT-FAMILY: Times New Roman, Times New Roman, Arial, Helvetica, sans-serif
+}
+
+.doclink:hover {
+	BACKGROUND: #FF873F; COLOR: black; FONT-FAMILY: Times New Roman, Times New Roman, Arial, Helvetica, sans-serif
+}
+
+
+.smallcaps {font-variant: small-caps}
+.overline	{text-decoration: overline}
