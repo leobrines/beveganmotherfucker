@@ -102,9 +102,9 @@
 	<p>
 		Stop supporting this shit motherfucker.
 	</p>
-	<div>
-		<video onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();" loop controls preload="auto" autoplay muted>
-			 <source type="video/mp4" src="assets/animal_explotaition_footage.mp4">
+	<div id="footage">
+		<video onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();" loop controls preload="metadata" autoplay muted>
+			 <source type="video/mp4" src="assets/animal_explotaition_footage.mp4" onerror="document.getElementById('footage').remove()">
 		</video>
 	</div>
 	<footer>
