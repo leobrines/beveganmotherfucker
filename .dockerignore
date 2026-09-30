@@ -1,0 +1,10 @@
+.git
+.github
+.kamal
+config
+.env*
+node_modules
+Dockerfile
+.dockerignore
+.gitignore
+videos
