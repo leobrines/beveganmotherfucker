@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Wipe the ephemeral GHCR credential from ~/.docker/config.json on every host
+# right after the image is pulled and running. Kamal's dispatcher (kamal-ci
+# v2) authenticates with a per-run GITHUB_TOKEN that dies with the job, but
+# we still don't want it sitting on disk any longer than necessary.
+#
+# `kamal registry logout` runs `docker logout ghcr.io` over SSH on every host
+# in `servers.web`. Non-fatal: if it fails, the token expires with the job
+# anyway.
+set -eu
+kamal registry logout || echo "post-deploy: registry logout failed (token expires with job, safe to ignore)"

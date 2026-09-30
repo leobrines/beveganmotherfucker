@@ -1,0 +1,31 @@
+# Kamal 2 deploy for beveganmotherfucker.com
+# Deployed by leobrines/kamal-ci v2 dispatcher (`kamal deploy --skip-push`) —
+# the image is already built and pushed to GHCR by .github/workflows/build.yml.
+
+service: beveganmotherfucker
+image: leobrines/beveganmotherfucker
+
+servers:
+  web:
+    - beveganmotherfucker.com
+
+# Kamal's built-in proxy terminates TLS via Let's Encrypt for this host.
+proxy:
+  ssl: true
+  host: beveganmotherfucker.com
+  app_port: 8080
+  healthcheck:
+    path: /up
+    interval: 5
+
+registry:
+  server: ghcr.io
+  username: leobrines
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+ssh:
+  user: deploy
+
+builder:
+  arch: amd64
